@@ -28,7 +28,7 @@ const renderEntries = () => {
     <td>${entry.email}</td>
     <td>${entry.password}</td>
     <td>${entry.dobv}</td>
-    <td>${entry.accepted ? 'Yes' : 'No'}</td>
+    <td>${entry.accepted}</td>
     </tr>`;
   });
   entries += `</table>`;
