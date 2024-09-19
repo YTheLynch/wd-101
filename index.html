@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: lightgray;
+        width: 80%;
+        margin: 0 auto;
+      }
+
+      label {
+        display: inline-block;
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="user-form">
+      <div class="container">
+        <div>
+          <label for="name"> Name: </label>
+          <input required type="text" id="name" name="name" />
+        </div>
+
+        <div>
+          <label for="email">Email: </label>
+          <input required type="email" name="email" id="email" />
+        </div>
+
+        <div>
+          <label for="password">Password: </label>
+          <input required type="password" name="password" id="password" />
+        </div>
+        
+        <div>
+          <label for="dob">Date of Birth: </label>
+          <input required type="date" id="dob" name="dob" />
+        </div>
+
+        <div>
+          <label for="acceptTerms">Accept Terms & Conditions</label>
+          <input type="checkbox" id="acceptTerms" name="acceptTerms" />
+        </div>
+
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+
+    <h2>Entries</h2>
+    <div id="user-entries"></div>
+
+    <script src = "./index.js"></script>
+  </body>
+</html>
